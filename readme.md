@@ -1,6 +1,7 @@
 # API pour l'application monPanier
 
 Toutes les données sont décrites aux format JSON, sauf les images.
+
 Cette api est basée sur le package [JSON Server](https://github.com/typicode/json-server).
 
 ## Routes
