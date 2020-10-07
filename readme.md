@@ -1,26 +1,34 @@
 # API pour l'application monPanier
 
+Toutes les données sont décrites aux format JSON, sauf les images.
+Cette api est basée sur le package [JSON Server](https://github.com/typicode/json-server).
+
 ## Routes
 Routes pour la gestion des **articles** :
-GET /articles
-GET /articles/id
-POST /articles
-PUT /articles/id
-PATCH /articles/id
-DELETE /articles/id
+
+    GET /articles
+    GET /articles/id
+    POST /articles
+    PUT /articles/id
+    PATCH /articles/id
+    DELETE /articles/id
 
 Routes pour la gestion des articles dans le **panier** :
-GET /panier
-GET /panier/id
-POST /panier
-PUT /panier/id
-PATCH /panier/id
-DELETE /panier/id
+
+    GET /panier
+    GET /panier/id
+    POST /panier
+    PUT /panier/id
+    PATCH /panier/id
+    DELETE /panier/id
+
+Route pour la **base de données** complète :
+
+    GET /db
 
 Route statique pour l'accès aux **images** des articles :
-GET /images/nom_de_l_image
 
-Toutes les données sont décrites aux format JSON, sauf les images.
+    GET /images/nom_de_l_image
 
 Un **article** est décrit par les attributs suivants :
 ```
@@ -58,8 +66,8 @@ exemple :
 }
 ```
 
-##Fonctionnement du serveur
-Le serveur se lance en localhost sur le port 7000.
+## Fonctionnement du serveur
+Le serveur se lance en localhost sur le port 7000 par défaut (modifiable dans le fichier package.json. __Attention à modifier aussi le forward si vous utilisez un émulateur__).
 
 Vous avez à disposition les scripts suivant pour lancer votre serveur et configurer les accès par un périphérique mobile émulé :
 
