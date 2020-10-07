@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run api",
+    "start": "npm run json-server",
     "forward": "adb reverse tcp:7000 tcp:7000",
     "json-server": "json-server --port 7000 --watch data.json",
-    "delay-api": "npm run forward && npm run json-server -- --middlewares=delay.js",
-    "api": "npm run forward && npm run json-server"
+    "delay-api": "npm run json-server -- --middlewares=delay.js",
+    "api": "npm run json-server"
+
   },
   "author": "",
   "license": "ISC",
