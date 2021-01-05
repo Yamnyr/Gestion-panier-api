@@ -171,12 +171,19 @@
   ],
   "panier": [
     {
-      "id": 1,
-      "quantity": 2
+      "id": 7,
+      "quantity": 17,
+      "prix": 102.5
     },
     {
-      "id": 3,
-      "quantity": 1
+      "id": 2,
+      "quantity": 34,
+      "prix": 15.7
+    },
+    {
+      "id": 8,
+      "quantity": 4,
+      "prix": 52.2
     }
   ]
 }

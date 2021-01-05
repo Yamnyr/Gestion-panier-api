@@ -34,11 +34,11 @@ Route statique pour l'accès aux **images** des articles :
 Un **article** est décrit par les attributs suivants :
 ```
 {
-    "id"
-    "description"
-    "prix"
-    "type"
-    "picture"
+    "id": number
+    "description": string
+    "prix": number
+    "type": string
+    "picture": string
 }
 ```
 exemple :
@@ -46,7 +46,7 @@ exemple :
 {
     "id": 23,
     "description": "PC 5",
-    "prix": 621.9,
+    "prix": 621.90,
     "type": "pc",
     "picture": "/images/pc5.jpg"
 }
@@ -55,15 +55,17 @@ exemple :
 un article du **panier** est décrit par les attributs suivants :
 ```
 {
-    "id"
-    "quantity"
+    "id": number
+    "quantity": number
+    "prix": number
 }
 ```
 exemple :
 ```
 {
     "id": 1,
-    "quantity": 2
+    "quantity": 2,
+    "prix": 162.90
 }
 ```
 
