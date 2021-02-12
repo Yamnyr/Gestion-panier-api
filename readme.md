@@ -70,7 +70,20 @@ exemple :
 ```
 
 ## Fonctionnement du serveur
-Le serveur se lance en localhost sur le port 7000 par défaut (modifiable dans le fichier package.json. __Attention à modifier aussi le forward si vous utilisez un émulateur__).
+Le serveur se lance en localhost sur le port 7000 par défaut (modifiable dans le fichier package.json.
+
+Ce serveur sera accessible avec les urls suivantes (qui n'auront pas toutes le même impact) :
+
+* http://localhost:7000
+* http://127.0.0.1:7000
+* http://Votre adresse IP:7000
+Vous pouvez retrouver votre adresse IP avec la commande ```ifconfig``` sur linux ou ```ipconfig``` sur windows.
+
+La 3ème forme est la plus accessible ne nécessitera pas d'autre configuration de votre part.
+
+L'utilisation de localhost ou 127.0.0.1 nécessitera la mise ne place d'un forward de port sur un mobile physique ou emulateur (voir les scripts ci-dessous).
+
+Si votre périphérique physique n'est pas sur le même réseau que votre machine, vous pouvez utiliser le script <code>ngrok</code> ci-dessous.
 
 Vous avez à disposition les scripts suivant pour lancer votre serveur et configurer les accès par un périphérique mobile émulé :
 
