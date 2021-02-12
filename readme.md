@@ -77,3 +77,4 @@ Vous avez à disposition les scripts suivant pour lancer votre serveur et config
 * **"start"** (alias api ou json-server) - démarre le serveur d'api
 * **"delay-api"** - démarre le serveur en mode dégradé avec un délais de réponse des requètes compris entre 0 et 5 secondes
 * **"forward"** - met en place le proxy permettant à un mobile émulé d'accéder au serveur. A ne lancer qu'après avoir démarré l'émulateur
+* **"ngrok"** - démarre un tunnel [ngrok](https://ngrok.com/docs) permettant des requètes fetch d'un mobile physique vers votre localhost. Nécessite l'installation de ngrok au préalable : ```sudo npm i -g ngrok``` ou ```sudo snap install ngrok``` sous linux
